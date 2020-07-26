@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="styles" type="text/css" href="styles.css" />
+</head>
+<body>
+    <h1>
+        SIGN UP TO YOURCOSTUMTAILOR.COM
+    </h1>
+   
+
+    <h2>
+        Step 4/4 - Payment
+    </h2>
+    
+    <br>
+<!-- progress -->
+    <div class="pprogress">
+        <label for="file">Progress:</label>
+        <progress id="file" max="100" value="80"> 80% </progress>
+        
+    </div>
+    
+    <br> 
+    <P>
+        Please fill in your payment data 
+    </P>
+    <br> 
+<!-- form -->
+    <form action="page3.html" method="GET">
+               
+        <div>
+            <label for="cardname">Name on card</label>
+            <input type="text" id="cardname" name="cardname" required> <br>
+        </div>
+                <br>
+        <div>
+            <label for="cardtype">Card type</label>
+            <span>
+                <select aria-label="cardtype" name="cardtype" required id="cardtype" title="Card type" class="_9407 _5dba _8esg">
+                    <option value="selectcard"> </option>
+                    <option value="credeb">Credit/debit</option>
+                    <option value="paypal">Paypal</option>
+                    
+                </select>
+            </span>
+            
+        </div>
+                <br>
+        <div>
+            <label for="cardnumber">Card number</label>
+            <input id="cardnumber" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+  
+        </div>
+                <br>
+        <div>
+            <label for="firstname">First name</label>
+            <input type="text" id="firstname" name="firstname" required> <br>
+        </div>
+                <br>
+        <div>
+            <label for="exyear">Expiry year</label>
+            <input type="text" id="exyear" name="exyear" required maxlength="4">
+        </div>
+                <br>
+        <div>
+            <label for="exmonth">Expiry year</label>
+            <input type="text" id="exmonth" name="exmonth" maxlength="2">
+        </div>
+        <br>
+      
+        <div>
+            <label for="cvv"> CVV</label>
+            <input type="text" id="cvv" name="cvv" maxlength="3">
+        </div>
+        
+        
+        
+        <a class="nextstep" href="page4.html"><span class="nxtstp">Next step </span></a>
+        
+</body>
