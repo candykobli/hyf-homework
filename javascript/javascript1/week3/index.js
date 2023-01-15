@@ -53,8 +53,8 @@ const seriesDurations = [
     minutes: 32,
   }
 ]
-const myAge=37
-let myAgeInMinut=37*365*24*60
+const myAge=39
+let myAgeInMinut=39*365*24*60
 let timeserie1=(seriesDurations[0].days*24*60)+(seriesDurations[0].hours*60)+seriesDurations[0].minutes
 let timeserie2=(seriesDurations[1].days*24*60)+(seriesDurations[1].hours*60)+seriesDurations[1].minutes
 let timeserie3=(seriesDurations[2].days*24*60)+(seriesDurations[2].hours*60)+seriesDurations[2].minutes
