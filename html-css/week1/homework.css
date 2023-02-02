@@ -37,6 +37,10 @@ body {
   background-color: rgb(72, 35, 2);
   border-radius: 25px;
 }
+img {
+  width: 200px;
+  height: 220px;
+}
 
 #box3 {
   padding: 10px;
