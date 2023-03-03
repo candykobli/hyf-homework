@@ -92,3 +92,4 @@ console.log(
     startupName.length +
     " characters"
 );
+console.log("Hello");
