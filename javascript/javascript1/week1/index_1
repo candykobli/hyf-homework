@@ -57,3 +57,43 @@ if (housePrice < 1000000) {
       ". You are paying the normal price for this house"
   );
 }
+// Ez Namey (Startup name generator) Optional
+
+let firstWords = [
+  "Mug",
+  "MCA",
+  "Jupiter",
+  "Mamie",
+  "Mummies",
+  "Candy",
+  "Ivoire",
+  "Tutti",
+  "Make-Up we",
+  "Your good",
+];
+let secondWords = [
+  "Startup",
+  "Consulting",
+  "Advisory",
+  "Take Away",
+  "Catering",
+  "Fastfood",
+  "Corporation",
+  "Frutti",
+  "Artist",
+  "Dresser",
+];
+
+function random_item(items) {
+  return items[Math.floor(Math.random() * items.length)];
+}
+
+startupName = random_item(firstWords) + " " + random_item(secondWords);
+
+console.log(
+  "The startup: " +
+    startupName +
+    " contains " +
+    startupName.length +
+    " characters"
+);
