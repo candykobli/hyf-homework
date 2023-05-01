@@ -119,10 +119,34 @@ var myObject = {
 myObject.property("Good morning");
 
 // ----------------------------------The fastest presser in this realm------------------
-function getInput() {
-  document.getElementById("inputId").value;
+
+function startGame() {
+  let l = 0;
+  let s = 0;
+  var gameTime = document.getElementById("inputId").value;
+  setTimeout(function () {
+    console.log(`l was pressed ${l}`);
+    console.log(`s was pressed ${s}`);
+    if (l > s) {
+      console.log("l is the winner");
+    } else if (l < s) {
+      console.log("s is the winner");
+    } else {
+      console.log("Tie");
+    }
+  }, gameTime * 1000);
+  // ----------------------------example-------------------
+
+  document.addEventListener("keypress", (event) => {
+    // console.log(event.key);
+    if (event.key === "l") {
+      l++;
+    } else if (event.key === "s") {
+      s++;
+    }
+    // console.log(l);
+    // console.log(s);
+  });
 }
-var gameTime = document.getElementById("inputId").value;
-setTimeout(function () {
-  console.log("Hello");
-}, gameTime);
+const myButton = document.getElementById("startGame");
+myButton.addEventListener("click", startGame);
