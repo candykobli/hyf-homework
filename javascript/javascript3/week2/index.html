@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <form>
+        <div><h1>MY CONVERTOR</h1></div>
+        <div>
+          <label for="amountToConvert">Enter an amount</label>
+          <input type="number" name="amountToConvert" id="amountToConvert" />
+        </div>
+        <br />
+        <div>
+          <label id="fr_currency" for="from_currency">From</label>
+          <select name="from_currency" id="from_currency"></select>
+        </div>
+        <br />
+        <div>
+          <label id="t_currency" for="to_currency">To</label>
+          <select name="to_currency" id="to_currency"></select>
+        </div>
+        <br />
+        <div><button id="convertButton">Convert</button></div>
+
+        <div><p id="result"></p></div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
