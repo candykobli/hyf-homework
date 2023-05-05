@@ -1,0 +1,29 @@
+.myForm {
+  border: 2cm;
+  background-color: rgb(2, 48, 33);
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  /* In order to define widths */
+
+  width: 85%;
+}
+
+.nameLabel {
+  font-size: 20px;
+  text-align: center;
+  color: ivory;
+  font-weight: bold;
+}
+.nameInput:hover {
+  background-color: darkgrey;
+}
+.getAnswer {
+  font-size: 14px;
+  /* height: 30px; */
+}
